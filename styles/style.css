@@ -13,26 +13,24 @@ right some fucking content
   --bgcolor: red;
   --fixedpane: teal;
   --scrollbaroffset: calc(100vw - 100%);
+}
 
-  h2 {
-    font: small-caps 1.5em mr-eaves-sans, san-serif;
-  }
+h2 {
+  font: small-caps 1.5em mr-eaves-sans, san-serif;
+}
 
-  a {
-    color: red;
-    text-decoration: none;
-  }
+a {
+  color: white;
+  text-decoration: none;
+}
 
+abbr {
+  text-decoration: none;
+}
 
-
-  abbr {
-    text-decoration: none;
-  }
-
-  abbr[title]:hover {
-    opacity: .7;
-    cursor: help;
-  }
+abbr[title]:hover {
+  opacity: .7;
+  cursor: help;
 }
 
 /* ------- Root Layout ------- */
