@@ -1,0 +1,134 @@
+/* ------- Progress Notes -------\
+Template nav window
+right some fucking content
+
+*/
+/* ------- Global ------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* ------- variables ------- */
+  --textcolor: #121212;
+  --bgcolor: red;
+  --fixedpane: teal;
+  --scrollbaroffset: calc(100vw - 100%);
+}
+
+/* ------- Root Layout ------- */
+body {
+  background:
+    radial-gradient(circle farthest-side at 0% 50%, #1de4e4 23.5%, rgba(240, 166, 17, 0) 0)21px 30px,
+    radial-gradient(circle farthest-side at 0% 50%, #3dffff 24%, rgba(240, 166, 17, 0) 0)19px 30px,
+    linear-gradient(#1de4e4 14%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 85%, #1de4e4 0)0 0,
+    linear-gradient(150deg, #1de4e4 24%, #3dffff 0, #3dffff 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #3dffff 0, #3dffff 76%, #1de4e4 0)0 0,
+    linear-gradient(30deg, #1de4e4 24%, #3dffff 0, #3dffff 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #3dffff 0, #3dffff 76%, #1de4e4 0)0 0,
+    linear-gradient(90deg, #3dffff 2%, #1de4e4 0, #1de4e4 98%, #3dffff 0%)0 0 #1de4e4;
+  background-size: 40px 60px;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+main {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  font: 18px mrs-eaves, serif;
+  line-height: 1.4;
+  color: var(--textcolor);
+  margin: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 11.5vh;
+  min-height: 80px;
+  z-index: 3;
+  background: rgba(34, 193, 195, 0.75) 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  filter: drop-shadow(1px 1px 5px black);
+}
+
+#curvyboi {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 95%;
+  height: 75%;
+  background: rgb(34, 193, 195);
+  background: radial-gradient(circle, rgba(34, 193, 195, 0.25) 0%, rgba(8, 67, 101, 0.25) 100%);
+  font: 3.5vh mr-eaves-sans, san-serif;
+  padding-left: 4%;
+  text-align: left;
+  line-height: calc(11.5vh * 0.75 - 5px);
+  color: white;
+  border-bottom-right-radius: 75px;
+  position: -webkit-sticky;
+  position: sticky;
+  box-shadow: 0px -2px 10px 2px black
+}
+
+.thin_break {
+  border: 1px solid white;
+  width: 95%;
+  margin: 7.5px auto;
+}
+
+/* ------- Header ------- */
+h1 {}
+
+h2 {
+  font: small-caps 1.5em mr-eaves-sans, san-serif;
+}
+
+nav {
+  width: 90%;
+  height: 1400px;
+  flex-basis: auto;
+  border-radius: 10px;
+  margin: 40px 4%;
+  background: rgb(80, 218, 219);
+  background: radial-gradient(circle, rgba(80, 218, 219, 0.8) 0%, rgba(55, 201, 212, 0.8) 50%, rgba(80, 201, 224, 0.8) 100%);
+  text-align: center;
+  font: 1em mr-eaves-sans, san-serif;
+  color: white;
+  padding-top: 5px;
+  z-index: 2;
+}
+
+/* ------- General ------- */
+.dimage {
+  height: 50vh;
+  object-fit: contain;
+  object-position: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--highlight);
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+abbr[title]:hover {
+  opacity: .7;
+  cursor: help;
+}
+
+/* ------- Smaller screens ------- */
