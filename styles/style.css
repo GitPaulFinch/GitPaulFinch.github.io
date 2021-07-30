@@ -13,6 +13,26 @@ right some fucking content
   --bgcolor: red;
   --fixedpane: teal;
   --scrollbaroffset: calc(100vw - 100%);
+
+  h2 {
+    font: small-caps 1.5em mr-eaves-sans, san-serif;
+  }
+
+  a {
+    color: red;
+    text-decoration: none;
+  }
+
+
+
+  abbr {
+    text-decoration: none;
+  }
+
+  abbr[title]:hover {
+    opacity: .7;
+    cursor: help;
+  }
 }
 
 /* ------- Root Layout ------- */
@@ -59,6 +79,7 @@ header {
   filter: drop-shadow(1px 1px 5px black);
 }
 
+/* ------- Content ------- */
 #curvyboi {
   position: absolute;
   top: 0px;
@@ -84,13 +105,6 @@ header {
   margin: 7.5px auto;
 }
 
-/* ------- Header ------- */
-h1 {}
-
-h2 {
-  font: small-caps 1.5em mr-eaves-sans, san-serif;
-}
-
 nav {
   width: 90%;
   height: 1400px;
@@ -114,23 +128,3 @@ nav {
   object-fit: contain;
   object-position: center;
 }
-
-a {
-  text-decoration: none;
-  color: var(--highlight);
-}
-
-a:hover {
-  border-bottom: 1px solid;
-}
-
-abbr {
-  text-decoration: none;
-}
-
-abbr[title]:hover {
-  opacity: .7;
-  cursor: help;
-}
-
-/* ------- Smaller screens ------- */
